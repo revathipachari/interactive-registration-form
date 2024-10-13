@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Register</h1>
+
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Enter your first name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Enter your last name" required>
+        </div>
+
+        <!-- Email Address -->
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="form-group">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I accept the Terms and Conditions</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script src="registration.js"></script>
+
+</body>
+</html>
